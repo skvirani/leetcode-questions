@@ -68,4 +68,43 @@ public class MedianOfTwoSortedArrays4 {
 
         return median;
     }
+
+    public double attempt3(int[] nums1, int[] nums2) {
+        ArrayList<Integer> nums3 = new ArrayList<>();
+        int i = 0, j = 0;
+        while (i < nums1.length || j < nums2.length) {
+            if (i >= nums1.length) {
+                nums3.add(nums2[j]);
+                j++;
+            } else if (j >= nums2.length) {
+                nums3.add(nums1[i]);
+                i++;
+            } else if (nums1[i] < nums2[j]) {
+                nums3.add(nums1[i]);
+                i++;
+            } else if (nums1[i] > nums2[j]) {
+                nums3.add(nums2[j]);
+                j++;
+            } else if (nums1[i] == nums2[j]) {
+                nums3.add(nums1[i]);
+                nums3.add(nums2[j]);
+                i++;
+                j++;
+            }
+        }
+
+        if (nums3.size() != 0) {
+            double median;
+            if (nums3.size() % 2 == 0) {
+                int low = (int) Math.floor((double) (nums3.size() - 1)/2);
+                int high = (int) Math.ceil((double) (nums3.size() - 1)/2);
+                median = ((double)nums3.get(low) + (double) nums3.get(high)) / 2;
+            } else {
+                median = nums3.get(nums3.size() / 2);
+            }
+            return median;
+        } else {
+            return 0.0;
+        }
+    }
 }

@@ -13,7 +13,7 @@ class MedianOfTwoSortedArrays4Test {
         int[] nums1 = {};
         int[] nums2 = {};
 
-        double returned = median.attempt2(nums1, nums2);
+        double returned = median.attempt3(nums1, nums2);
 
         assertEquals(0.0, returned);
     }
@@ -23,7 +23,7 @@ class MedianOfTwoSortedArrays4Test {
         int[] nums1 = {1,3};
         int[] nums2 = {2};
 
-        double returned = median.attempt2(nums1, nums2);
+        double returned = median.attempt3(nums1, nums2);
 
         assertEquals(2.0, returned);
 
@@ -34,7 +34,7 @@ class MedianOfTwoSortedArrays4Test {
         int[] nums1 = {1,2};
         int[] nums2 = {3,4};
 
-        double returned = median.attempt2(nums1, nums2);
+        double returned = median.attempt3(nums1, nums2);
 
         assertEquals(2.5, returned);
     }
@@ -44,7 +44,7 @@ class MedianOfTwoSortedArrays4Test {
         int[] nums1 = {0,0};
         int[] nums2 = {0,0};
 
-        double returned = median.attempt2(nums1, nums2);
+        double returned = median.attempt3(nums1, nums2);
 
         assertEquals(0.0, returned);
     }
@@ -54,7 +54,7 @@ class MedianOfTwoSortedArrays4Test {
         int[] nums1 = {};
         int[] nums2 = {1};
 
-        double returned = median.attempt2(nums1, nums2);
+        double returned = median.attempt3(nums1, nums2);
 
         assertEquals(1.0, returned);
     }
@@ -64,7 +64,7 @@ class MedianOfTwoSortedArrays4Test {
         int[] nums1 = {2};
         int[] nums2 = {};
 
-        double returned = median.attempt2(nums1, nums2);
+        double returned = median.attempt3(nums1, nums2);
 
         assertEquals(2.0, returned);
     }
@@ -74,8 +74,18 @@ class MedianOfTwoSortedArrays4Test {
         int[] nums1 = {1,3};
         int[] nums2 = {2,7};
 
-        double returned = median.attempt2(nums1, nums2);
+        double returned = median.attempt3(nums1, nums2);
 
         assertEquals(2.5, returned);
+    }
+
+    @Test
+    public void longRepeatingArraysTest() {
+        int[] nums1 = {1,1,1,1,1,1,1,1,1,1,4,4};
+        int[] nums2 = {1,3,4,4,4,4,4,4,4,4,4};
+
+        double returned = median.attempt3(nums1, nums2);
+
+        assertEquals(3.0, returned);
     }
 }
