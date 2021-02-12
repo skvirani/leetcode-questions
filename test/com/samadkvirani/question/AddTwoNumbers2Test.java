@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AddTwoNumbers2Test {
+public class AddTwoNumbers2Test {
 
     AddTwoNumbers2 addTwoNumbers2 = new AddTwoNumbers2();
 

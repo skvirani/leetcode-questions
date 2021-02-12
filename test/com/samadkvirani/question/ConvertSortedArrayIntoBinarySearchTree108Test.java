@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ConvertSortedArrayIntoBinarySearchTree108Test {
+public class ConvertSortedArrayIntoBinarySearchTree108Test {
 
     ConvertSortedArrayIntoBinarySearchTree108 convert = new ConvertSortedArrayIntoBinarySearchTree108();
 

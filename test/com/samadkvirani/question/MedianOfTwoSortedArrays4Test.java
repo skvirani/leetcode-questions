@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MedianOfTwoSortedArrays4Test {
+public class MedianOfTwoSortedArrays4Test {
 
     MedianOfTwoSortedArrays4 median = new MedianOfTwoSortedArrays4();
 
