@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ReverseInteger7Test {
+public class ReverseInteger7Test {
 
     ReverseInteger7 reverseInteger = new ReverseInteger7();
 

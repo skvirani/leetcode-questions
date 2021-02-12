@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ValidParentheses20Test {
+public class ValidParentheses20Test {
 
     ValidParentheses20 valid = new ValidParentheses20();
 

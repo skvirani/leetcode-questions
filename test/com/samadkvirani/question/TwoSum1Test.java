@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-class TwoSum1Test {
+public class TwoSum1Test {
 
     TwoSum1 twoSum = new TwoSum1();
 
